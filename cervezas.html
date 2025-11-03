@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Guzman"> 
+    <meta name="description" content="Desarrollo web Html, Css y JavaScript">
+    <meta name="keywords" content="código, HTML, y más">   <meta name="Url" content=""> 
+    <title>Menú | Cervezas</title>
+    <link rel="icon" type="x-icon" href="img/Logo Red On Black.png">
+    <link rel="stylesheet" href="styles/cerveza.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  hamburgers libreria css  -->
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---- libreria scroll  ------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+<body>
+    <header class="header" id="inicio" id="top">
+        <nav class="menu-bars">
+            <a class="img-logo" href="">
+                    <img src="img/Logo Red On Black.png" alt="" width="70px">
+                </a>
+            <ul class="nav links">
+                <li><a class="link-bar" href="index.html">INICIO</a></li>
+                <li><a class="link-bar" href="index.html#nosotros">NOSOTROS</a></li>
+                <li><a class="link-bar" href="index.html#menu">MENÚ</a></li>
+                <li><a class="link-bar" href="index.html#contacto">UBICACION</a></li>
+                <li><span><a class="icon-phone" href=""><i class="fa-solid fa-phone"></i></a>(502+) 2323-1212</span></li>
+            </ul>
+            
+        <ul class="icon">
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-waze"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-waze"></i></a></li>
+        </ul>
+        </nav>
+
+        <!-- ---    hamburger-responsive    -->
+        <button class="hamburger--collapse hamburger" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+        </button>
+    </header>
+
+    <!--    banner      -->
+    <section   class="banner">
+        <div class="entrance">
+        <a class="icon-a" href="entrada.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568.3 564.4"><g id="Capa_6" data-name="Capa 6"><path d="M415.6,207.3c-5.4.8-10.7,2.4-16.9,3.8-3.8-17-2.6-30,11.6-42.8,16.8-14.9,19.4-36,12.2-57.4s-23-38.9-42.7-36.4c-34.3,4.4-67.6,4.6-101.3-1-1.4-.2-3.1,1.7-4.5,1.4-5-.7-10.8-.6-14.7-3.2C218.3,44.3,197,46,159.4,81c-33.5-14-56.7-10.1-74.9,11.7s-17.3,44.9-.1,74.9c4.3,7.6,5.7,17.9,5.7,27,.4,85.4.1,170.8.3,256.2.2,37.3,18.4,60.4,52.8,61.3,66.2,1.6,132.5,1.4,198.7,0,34.2-.7,53.6-22.9,54.7-57.2.6-15.1.1-30.2.1-45.9,32.5-3,57.7-18,69.8-45.5s22.1-58.4,24.9-88.4C496.1,224.8,465.7,200.1,415.6,207.3ZM377.4,448.1c-.6,30.4-11.9,43.4-41.6,44-62.1,1.3-124.3,1.2-186.4.1-27.3-.5-39.1-12.8-39.5-40.8-.9-61.2-.3-122.5-.3-186.4H242.7c2.5,47.4,18,67.2,50.9,66,30.9-1.2,45.7-22,45.9-65.9h38.2V319C377.7,362.1,378.2,405.1,377.4,448.1ZM111.1,244.8v-53l63.2-18.9c30.2,19,39.1,19.9,79.2,3.7,16.9,21.1,5.9,41.8,1.5,61.9-.6,3-8.8,6-13.5,6.1C198.6,245,155.6,244.8,111.1,244.8Zm218.5-68.6,46.9,14.6v56.7c-17.4-3.3-42.3-1.2-47.5-10.4C319,219.7,311.9,195.3,329.6,176.2Zm13.1-19.7c-12.1-9.8-18.3-6.8-27.5,3.2-18.1,19.6-15.7,42.5-12,65.4,2.1,13.2,7,26.1,11.5,38.8,5.4,15.1,9.5,31.3-6.6,40.4-8.5,4.8-23.9,5.3-32.3.7-17.6-9.5-11.6-26.2-7.5-42.3,6-22.9,11.4-46.4,12.6-69.8.5-11-8.3-23.1-14.8-33.5-2.5-3.8-13.2-7.2-15.9-5.1-30.4,22.6-56.4,14.4-83-14.5-6.5,8.2-9.7,14-14.3,18.1-15.2,13.3-36.1,13.4-49.8-.4S86.5,127,96.9,109.6,128.3,86,144.6,97s24.8,7.7,36.1-7.6c15.7-21.2,44-23.1,63.3-4.9,12.1,11.3,20.8,17.7,38.5,9.7,8.2-3.7,23.5,1.9,32.5,7.9,10.9,7.4,17.1,9.9,28.5.5,19.1-15.8,39.3-13.6,53.1,2.5s12.2,36.3-.6,50.3C381.9,170.9,362.3,172.5,342.7,156.5ZM471.8,278c-4.7,26.8-12.5,54.2-25.3,78-8.2,15.3-27.9,24.5-42.4,36.4l-7.3-6.7c0-46,.7-92-.4-137.9-.4-16.5,9.5-17.2,20.6-19.5C456.3,219.9,478.8,238.6,471.8,278Z"/></g></svg>
+        </a>
+        <article class="banner-text">
+            <h3>RESTURANTE <br> LAS TRES AMIGAS</h3>
+            <p>Somos un restaurante Gourmet en Antigua Guatemala</p>
+        </article>
+        </div>
+    </section>
+
+    <!-- ---slogan  -------->
+    <section id="" class="ixbalanque">
+        <article class="container">
+            <div class="cont-img">
+                <img src="img/cervezas/img-ix.jpg" alt="">
+            </div>
+            <div class="cont-img">
+                <img src="img/cervezas/ixbalanque cerveza.jpg" alt="">
+            </div>
+        </article>
+    </section>
+
+
+    <!------ goles       ---->
+    <section class="goles">
+        <div class="container-goles">
+            <img class="logo-goles" src="img/cervezas/100goles-editado.png" alt="">
+        <article class="goles-info">
+            <h2>NUESTRAS <br> CERVEZAS</h2>
+            <a href="#">MÁS INFORMÁCION</a>
+        </article>
+        <article class="goles-img">
+            <img src="img/cervezas/100goles-cerveza.jpg" alt="">
+        </article>
+        </div>
+    </section>
+
+    <!---- antigua      ------>
+    <section class="antigua">
+        <article>
+            <img src="img/cervezas/cerveza-antigua-vaso.png" alt="">
+        </article>
+    </section>
+
+    <!-----     cadejo       -->
+    <section class="cadejo">
+            <img class="logo-cadejo" src="img/cervezas/cadejol0g0.png" alt="">
+        <article class="cadejo-cont">
+            <figure class="contenedor-text">
+                <h2>la leyenda hecha realidad</h2>
+            </figure>
+            <figure class="figure-cadejo">
+                <img class="img-cadejo" src="img/cervezas/vaso el cadejo.png" alt="">
+            </figure>
+        </article>
+    </section>
+
+    <!--    ------->
+    <section class="roque">
+        <article class="contenedor-roque">
+            <figure class="contenedor-logo">
+                <img class="logo-roque" src="img/cervezas/san roque cerveceria.jpeg" alt="">
+            </figure>
+            <figure class="contenedor-botellas">
+                <img class="img-botellas" src="img/cervezas/cerveza-san-roge-botellasinfondo.png" alt="">
+            </figure>
+        </article>
+    </section>
+
+    <section class="cerveceria-14">
+        <article class="contenedor-14">
+            <figure class="figure-banner">
+                <img src="img/cervezas/banner-cerveceria14.png" alt="">
+            </figure>
+            <figure class="figure-logo">
+                <img src="img/cervezas/cerveceria-14-fondo-blanco.png" alt="">
+            </figure>
+            
+        </article>
+        
+    </section>
+
+    <section class="cervezas">
+        <article class="container-logos">
+            <figure>
+            <img src="img/cervezas/san roque cerveceria.jpeg" alt="">
+        </figure>
+        <figure>
+            <img src="img/cervezas/100goles-editado.png" alt="">
+        </figure>
+        <figure>
+            <img src="img/cervezas/cadejol0g0-black.png" alt="">
+        </figure>
+        <figure>
+            <img src="img/cervezas/cerveceria-14-fondo-blanco.png" alt="">
+        </figure>
+        <figure>
+            <img src="img/cervezas/Antigua-Cerveza-Logo-Large.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="img/cervezas/ixbalanque cerveza.jpg" alt="">
+        </figure>
+        </article>
+        
+    </section>
+
+
+
+
+    <!-- --     contact     ------>
+    <section id="contacto" class="contact">
+        <h3>contacto</h3>
+        <h4>Telefono: (502) 2323-1212</h4>
+        <p>Ubicación: 2da calle 20-13 Vista Hermosa 1, nivel 18 de hotel Vista Quince, zona 15</p>
+        <article class="icon-i">
+            <a href=""><i class="fa-brands fa-waze"></i></a>
+            <a href=""><i class="fa-brands fa-waze"></i></a>
+        </article>
+        <article class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1581889254403!2d-90.49330672615847!3d14.590060377337176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a36f5fbd2971%3A0x809c494486c6e58f!2sHotel%20Vista%20Quince!5e0!3m2!1ses!2sgt!4v1761672060359!5m2!1ses!2sgt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
+        <button id="button-up" class="top btn-inicio" href="#top">Arriba</button>
+    </section>
+
+
+
+
+    <!-- --     footer      ----->
+    <footer class="footer">
+        <div class="container-footer">
+        <article class="footer-img">
+            <a href=""><img src="img/logo-white.png" alt=""></a>
+        </article>
+        <article>
+            <h2>Horario: Lunes a Viernes : 12:00 pm a 10:00 pm </h2>
+            <h2>sábado: 07:00 am a 10:00 pm</h2>
+            <h2>Domingo: 07:00 am a 09:00 pm</h2>
+        </article>
+        <article>
+            <h2>Correo: restuarantelastresamigas@.com</h2>
+            <h2>nosotros: </h2>
+            <h2>Telefono: </h2>
+        </article>
+        </div>
+        <hr>
+        <div class="header-footer">
+            <a href="index.html">inicio</a>
+            <a href="index.html#nosotros">nosotros</a>
+            <a href="index.html#menu">menú</a>
+            <a href="index.html#nosotros">ubicación</a>
+        </div>
+    </footer>
+        
+        
+    <div class="footer-nav">
+        <a href="#">&copy;RESTAURANTELAS TRES AMIGAS | desarrollo web 2025</a>
+    </div>
+
+    <!-- --- script     -->
+    <script src="modules.js" type="module"></script>
+    <script src="button-top.js"></script>
+    <script src="scroll.js"></script>
+
+
+</body>
+</html>

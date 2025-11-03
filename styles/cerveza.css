@@ -1,0 +1,899 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Italianno&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/*
+.italianno-regular {
+  font-family: "Karla", sans-serif;
+  font-family: "Italianno", cursive;
+  font-family: "Instrument Sans", sans-serif;
+  font-family: "Inria Sans", sans-serif;
+  font-family: "Inika", serif;
+  font-family: "Caveat", cursive;
+
+}*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  padding: 1rem 0px;
+  box-shadow: 0px  1px 10px rgba(0, 0, 0, 0.404);
+  background: white;
+}
+.header .menu-bars{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu-bars .links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.header .menu-bars .links li .link-bar{
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  color: #731012;
+  border: none;
+  transition: .5s ease;
+}
+.header .menu-bars .links li .link-bar:hover{
+  border: none;
+  color: #585858;
+}
+
+.header .menu-bars .links li span{
+  font-family: "Karla", sans-serif;
+  color: #731012;
+}
+.header .menu-bars .links li span .icon-phone {
+  margin: .5rem;
+  color: white;
+  background: #731012;
+  padding: .2rem;
+  font-size: .7rem;
+  border-radius: 50%;
+  border: 1px solid #731012;
+  transition: all 500ms ease;
+}
+.header .menu-bars  .img-logo{
+  width: 70px;
+}
+.header .menu-bars  .img-logo img{
+  width: 70px;
+}
+
+.header .menu-bars .icon{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  background: #731012;
+  padding: .9rem;
+  border-radius: 50px;
+}
+
+.header .menu-bars .icon li a{
+  color: #731012;
+  font-size: 1rem;
+  background: white;
+  padding: .4rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 500ms ease;
+}
+.header .menu-bars .links li a:hover {
+  color: #731012;
+  background: white;
+  border: 1px solid #731012;
+}
+.header .menu-bars .icon li a:hover{
+  color: white;
+  background: #731012;
+  border: 1px solid white;
+}
+
+/*-------- menu-responsive    ------*/
+.header .hamburger{
+  z-index: 30;
+  position: absolute;
+  right: 1rem;
+  display: none;
+}
+
+
+
+/*----    banner    ----*/
+.banner{
+  min-height: 40vh;
+  background-image: linear-gradient(100deg, #00000050, #00000050), url('../img/cervezas/pared\ de\ cerveza\ las\ 3\ amigas.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+  z-index: 1;
+
+  /*animation: zoomBackground 20s ease-in-out infinite;*/
+}
+
+
+
+@keyframes zoomBackground {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+.banner .entrance{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.banner .entrance .banner-text{
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+.banner .entrance .icon-a{
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  height: 210px;
+  z-index: 1;
+  cursor: default;
+}
+.banner .icon-a svg{
+  fill: white;
+  border: 4px solid white;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 500ms ease;
+  z-index: 1;
+}
+
+.banner .banner-text h3{
+  color: white;
+  font-family: "Inika", serif;
+  font-size: clamp(30px, 5vw, 50px);    /*3.5rem*/
+  font-weight: 700;
+}
+
+.banner .banner-text p{
+  color: white;
+  font-family: "Italianno", cursive;
+  font-size: clamp(20px, 4.5vw, 60px); /*4rem*/
+  font-weight: 100;
+}
+
+/*---------  menu    -------*/
+.ixbalanque{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    background-image: url('../img/cervezas/fondo-abstracto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}
+.ixbalanque .container{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.ixbalanque .container .cont-img{
+  width: 400px;
+  height: 100%;
+  object-fit: contain;
+}
+.ixbalanque .container .cont-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*------  menu    ------*/
+
+
+/*------  100-goles  -------*/
+.goles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #153687;
+    background: radial-gradient(circle, rgba(21, 54, 135, 1) 0%, rgba(5, 15, 50, 1) 100%);
+}
+.goles .container-goles{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.goles .container-goles  .logo-goles{
+    position: absolute;
+    width: 100px;
+    right: 46%;
+    z-index: 10;
+    top: 0;
+}
+
+.goles .container-goles .goles-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  position: relative;
+  gap: 2rem;
+  padding: 1rem;
+  margin-left: 4rem;
+}
+.goles .container-goles .goles-info h2{
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.goles .container-goles .goles-info a{
+    color: #000000;
+    text-decoration: none;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    background: #D6B329;
+    text-align: center;
+    width: 50%;
+    padding: .7rem;
+    border-radius: 20px;
+}
+.goles .container-goles .goles-img{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   top: 0;
+   bottom: 0;
+}
+.goles .container-goles .goles-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/*---------  menu    -------*/
+.antigua{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    background-image: url('../img/cervezas/antigua-cerveza.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*-----     -----*/
+.cadejo{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+    background-image: url('../img/cervezas/banner-cadejo.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.cadejo .logo-cadejo{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    opacity: 0.3;
+    right: 40%;
+    top: 20%;
+    object-fit: contain;
+}
+
+/*----*/
+.cadejo .cadejo-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+    gap: 1rem;
+}
+.cadejo .cadejo-cont .contenedor-text{
+    width: 100%;
+}
+.cadejo .cadejo-cont .contenedor-text h2{
+    color: white;
+    font-size: 4.7rem;
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.cadejo .cadejo-cont .contenedor-text{
+  width: 300px;
+}
+.cadejo .cadejo-cont .figure-cadejo img{
+  width: 270px;
+}
+
+/*------    roque   ------*/
+.roque{
+    width: 100%;
+    min-height: 90vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background: black;
+    position: relative;
+}
+.roque::before{
+    content: "";
+    position: absolute;
+    background: white;
+    width: 70%;
+    height: 70%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.roque .contenedor-roque{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.roque .contenedor-roque{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    gap: 1rem;
+}
+.roque .contenedor-roque .contenedor-logo{
+  width: 200px;
+  height: 170px;
+} 
+.roque .contenedor-roque .contenedor-botellas{
+  width: 500px;
+  height: 400px;
+}   
+.roque .contenedor-roque img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/*----    cerveceria-14   -----*/
+.cerveceria-14{
+    width: 100%;
+    background-image: url('../img/cervezas/banner-cerveceria-14cerveceria.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 2rem 1rem;
+}
+.cerveceria-14::before{
+    content: '';
+    position: absolute;
+    background-color: #328bdf67;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.cerveceria-14 .contenedor-14{
+  width: 90%;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cerveceria-14 .contenedor-14 .figure-logo{
+  width: 300px;
+}
+.cerveceria-14 .contenedor-14 .figure-banner{
+  width: 700px;
+}
+.cerveceria-14 .contenedor-14 figure img{
+    width: 100%;
+}
+
+
+
+/*------    cervezas    ----*/
+.cervezas{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.cervezas .container-logos{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.cervezas .container-logos figure{
+    width: 130px;
+    height: 130px;
+}
+.cervezas .container-logos figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*------  CONTACT   -----*/
+.contact{
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .9rem;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+.contact h3{
+  text-align: center;
+  font-size: clamp(40px, 6vw, 60px);/*3.4rem*/
+  font-family: "Inika", serif;
+  text-transform: capitalize;
+  color: #731012;
+  padding-bottom: 1.5rem;
+}
+.contact h4,
+.contact p{
+  text-align: center;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: clamp(12px, 1.5vw, 30px);/*1.2rem*/
+  color: #838383;
+  font-weight: 200;
+}
+.contact .icon-i{
+  padding: 1rem 0px;
+  display: flex;
+  gap: 2rem;
+}
+.contact .icon-i a{
+  font-size: 3rem;
+  background: #585858;
+  padding: .5rem;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid #585858;
+  transition: .5s ease;
+}
+.contact .icon-i a:hover{
+  font-size: 3rem;
+  background: white;
+  color: #585858;
+  border: 2px solid #585858;
+}
+.contact .map{
+  width: 80%;
+  height: 75vh;
+  padding-bottom: 4rem;
+}
+
+/*------  top    ----*/
+.contact .top{
+  font-size: 1.5rem;
+  bottom: 0;
+  background: #731012;
+  font-family: "Instrument Sans", sans-serif;
+  padding: .7rem 3rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: .5s ease;
+  border: 2px solid #731012;
+}
+.contact .top:hover{
+  color: #585858;
+  background: white;
+  border: 2px solid #585858;
+}
+/*-----*/
+
+
+
+
+
+/*----  footer    -----*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #731012;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+.footer .container-footer{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.footer .footer-img{
+  height: 150px;
+}
+.footer .footer-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer .container-footer h2{
+  font-size: clamp(15px, 2vw, 20px);
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-weight: 100;
+}
+.footer hr{
+  width: 90%;
+  border: 1px solid rgb(156, 156, 156);
+}
+.footer .header-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .header-footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 2px solid #731012;
+  transition: .5s ease;
+}
+.footer .header-footer a:hover{
+  border-bottom: 2px solid white;
+}
+/*------  footer-nav    ----*/
+.footer-nav{
+  background: black;
+  padding: 1.5rem 1rem;
+}
+.footer-nav a{
+  text-decoration: none;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: clamp(10px, 1vw, 16px);
+  font-weight: 100;
+}
+
+/*-----*/
+
+
+/*------- header -------*/
+@media (max-width: 1200px){
+  .header .menu-bars{
+  width: 90%;
+}
+.header .menu-bars .links{
+  gap: 1rem;
+}
+}
+@media (max-width: 900px){
+  .header .menu-bars{
+  width: 100%;
+  padding: 0px 1rem;
+}
+.header .menu-bars .links{
+  gap: .5rem;
+}
+}
+@media(max-width: 800px){
+  .header .menu-bars{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*-------   header    -----*/
+.header .hamburger{
+  display: block;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background-color: #731012 !important;
+}
+  .header .menu-bars .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    height: 100dvh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background: white;
+    z-index: 20;
+    transform:  translateX(100%);
+    transition: .4s ease-in-out;
+    font-size: 2rem;
+  }
+  .header .menu-bars .links.is-active{
+    transform: translateX(0);
+  }
+  .header .menu-bars .links li span .icon-phone {
+    margin: .5rem;
+    color: white;
+    background: #731012;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 1px solid #731012;
+    transition: all 500ms ease;
+  }
+
+}
+
+
+/*------  banner    ----*/
+@media (max-width: 1200px){
+  .banner .banner-text{
+  width: 100%;
+}
+}
+@media (max-width:750px){
+  
+}
+@media (max-width: 1000px){
+.banner .entrance{
+  width: 100%;
+
+}
+}
+@media(max-width: 850px){
+.banner .entrance .icon-a{
+  display: flex;
+  width: 40%;
+  height: 170px;
+  z-index: 200;
+}
+}
+@media (max-width: 1000px){
+  .banner .entrance{
+  gap: 1rem;
+}
+}
+@media(max-width: 743px){
+  .banner .entrance{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.banner .entrance .icon-a{
+  display: flex;
+  justify-content: right;
+  width: 210px;
+  height: 210px;
+  z-index: 200;
+}.banner .entrance .banner-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  gap: .5rem;
+}
+.banner .entrance .banner-text h3{
+  text-align: center;
+}
+}
+
+
+
+
+/*------   menu-card --------*/
+@media(max-width: 985px){
+  .menu .container .card .text{
+  padding: 1rem;
+}
+}
+@media(max-width: 857px){
+  .menu .container .card .text p{
+  font-size: 1.5rem;
+}
+.menu .container .card .text{
+  padding: .5rem;
+}
+}
+@media (max-width: 800px){
+  .menu .container{
+  width: 100%;
+}
+}
+@media (max-width: 643px){
+  .menu .container{
+  padding: 2rem 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+.menu .container .card .text{
+  padding: 1rem ;
+}
+}
+
+
+/*------------------------*/
+@media (max-width: 649px){
+.cadejo .cadejo-cont .contenedor-text h2{
+    font-size: 3rem;
+}
+}
+
+
+/*-------   promotions  ------*/
+@media (max-width: 929px){
+  .goles .container-goles .goles-info{
+  margin-left: 2rem;
+}
+  .goles .container-goles .goles-info h2{
+    font-size: 3rem;
+}
+.goles .container-goles{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.goles .container-goles  .logo-goles{
+    position: absolute;
+    width: 100px;
+    right: 10%;
+    z-index: 10;
+    top: 10%;
+}
+.goles .container-goles .goles-info h2{
+    font-size: 4rem;
+}
+}
+@media(max-width: 520px){
+  .goles .container-goles .goles-info h2{
+    font-size: 3rem;
+}
+}
+@media(max-width: 433px){
+  .goles .container-goles .goles-info h2{
+    font-size: 2rem;
+}
+.goles .container-goles .goles-info{
+  padding: .5rem;
+}
+.goles .container-goles  .logo-goles{
+    position: absolute;
+    width: 80px;
+    right: 1rem;
+    z-index: 10;
+    top: 1rem;
+}
+}
+
+/*-----   cerveza el cadejo -----*/
+@media(max-width: 649px){
+  .cadejo .cadejo-cont .figure-cadejo img{
+  width: 200px;
+}
+}
+
+
+/*------ our    ------*/
+@media(max-width: 690px){
+  .contact h3{
+  padding-bottom: 0;
+}
+}
+@media(max-width: 400px){
+  .our .our-img{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr );
+}
+}
+@media(max-width: 690px){
+  .contact .map{
+  width: 100%;
+  height: 60vh;
+}
+}
+
+
+

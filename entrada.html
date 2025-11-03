@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Guzman"> 
+    <meta name="description" content="Desarrollo web Html, Css y JavaScript">
+    <meta name="keywords" content="código, HTML, y más">   <meta name="Url" content=""> 
+    <title>Menú | Entradas</title>
+    <link rel="icon" type="x-icon" href="img/Logo Red On Black.png">
+    <link rel="stylesheet" href="styles/entrada.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  hamburgers libreria css  -->
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---- libreria scroll  ------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+</head>
+<body>
+    <header class="header" id="inicio" id="top">
+        <nav class="menu-bars">
+            <a class="img-logo" href="">
+                    <img src="img/Logo Red On Black.png" alt="" width="70px">
+                </a>
+            <ul class="nav links">
+                <li><a class="link-bar" href="index.html">INICIO</a></li>
+                <li><a class="link-bar" href="index.html#nosotros">NOSOTROS</a></li>
+                <li><a class="link-bar" href="index.html#menu">MENÚ</a></li>
+                <li><a class="link-bar" href="index.html#contacto">UBICACION</a></li>
+                <li><span><a class="icon-phone" href=""><i class="fa-solid fa-phone"></i></a>(502+) 2323-1212</span></li>
+            </ul>
+            
+        <ul class="icon">
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-waze"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-waze"></i></a></li>
+        </ul>
+        </nav>
+
+        <!-- ---    hamburger-responsive    -->
+        <button class="hamburger--collapse hamburger" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+        </button>
+    </header>
+
+    <!--    banner      -->
+    <section   class="banner">
+        <div class="entrance">
+        <a class="icon-a" href="entrada.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 625.8 510.1"><g id="Capa_6" data-name="Capa 6"><path d="M357.2,41.9C297.6,25.3,239.1,29.8,181.6,54.1c-1.2-13.3-6.5-24.3-16-33.1A48.2,48.2,0,0,0,131.2,7.9,50.1,50.1,0,0,0,84.8,42.6c-6.3,19.8.4,45.5,24.2,59-45.1,42.3-72.7,93.9-81.6,155s2.9,118.8,34.7,172.9L500.9,142.9C464.4,92.5,416.8,58.4,357.2,41.9ZM158.6,164.4c-6,6.5-12.3,12.7-17.9,19.5A168.3,168.3,0,0,0,112.8,233c-7.4,20.3-10.6,41.3-8.6,62.8a113,113,0,0,0,2.3,15.3c1.8,8.2-2.8,16.4-10.7,18.2s-16.7-3-18.2-11.6c-1.8-11.2-3-22.5-3.9-28.7.5-33.5,7.1-60.3,19.7-85.7a217.2,217.2,0,0,1,43.5-59.4c9-8.9,22-5.9,25.7,6C164.3,155.4,162.5,160.2,158.6,164.4Z"/><path d="M14.4,469.3H615.3c0,7.1.6,14-.2,20.6s-7.3,11.2-13.9,11.4c-11.8.2-23.5.2-35.3.2H29.9a15.3,15.3,0,0,1-15.4-13.7C13.9,481.7,14.4,475.4,14.4,469.3Z"/><path d="M462.1,446.1c-9.1-6.6-19-12.1-24.3-22.8-3.2-6.4-7.9-12.1-10.9-18.5-4.9-10.7-6.9-22.1-6.9-33.9a6.2,6.2,0,0,0-2-4.2c-24.1-19.8-61.9-11.9-76.1,15.8-1.5,2.9-2.8,6-4.2,9.2-11.8-6.3-23.7-7.3-35.8-2.1s-19.6,14.5-23.6,27c-9-17-22.3-26.8-41.5-26.7-21.8.3-35.6,12.3-43.7,32.4-9-7.2-19-10-30.3-8s-19.7,8.4-26.1,17.8c-11.3-7.8-23.5-10.7-36.7-7.7s-23.2,10.6-30,23h74.4c.2-9,3.8-13.8,10.6-13.4,2.7.2,6.2,1.4,7.8,3.4s2.7,6.4,4.1,10H294c-9.5-10.9-6.1-21-.3-26.6a17.5,17.5,0,0,1,23.8-.5,17.2,17.2,0,0,1,6.1,11.1c.8,6.2-1.6,11.4-6.2,16.1h72.3c3-10.5,8.5-15.9,17.4-15.9a21.4,21.4,0,0,1,10.2,2.8c5,2.7,7.1,7.8,8.3,13.1h38.6ZM230,426.1a10.6,10.6,0,0,1-10.6-10.8,10.9,10.9,0,0,1,10.8-10.7c5.7.1,10.8,5.2,10.7,10.9A10.9,10.9,0,0,1,230,426.1ZM377.2,397a7.2,7.2,0,0,1-7.3-7,7.5,7.5,0,0,1,6.9-7c3.7,0,7.3,3.4,7.3,7.1A7.3,7.3,0,0,1,377.2,397Z"/><path d="M451.1,410c-5.5-37.6,6.7-68.2,35.8-92.3-6.6,1.3-26.6,18-37.3,36-9.2,15.6-12.9,32.5-14,50.3l-1,.2c-1.5-4.1-3.1-8-4.3-12.1-7.9-28.8-1.9-54.2,18.6-76.1,15.4-16.4,34.5-24.6,56.9-26.2,13.3-1,26.5-1.4,39.8.1l1.1.3c-2.8,3.1-5.7,6.1-8.3,9.4-11.3,14.1-16.8,30.3-16.8,48.5.1,6.7-1.2,13.5-2.1,20.2-.5,3.5-2.6,4.9-6.4,5.2-13.9,1.1-27.3,4.7-39.5,11.9-8.6,5.1-14.6,12.6-19.7,20.9l-2.1,3.3C451.7,409.8,451.4,409.8,451.1,410Z"/><path d="M455.3,431.3c25-22.6,54-28.3,85.8-22.2-6.5-4.6-27.4-8.2-44-6.7s-22.7,2.4-43.1,13.4l-.9-.6c3.1-4.8,6.1-9.9,9.4-14.6,7.3-10.1,17.8-15.5,29.3-19,16.3-4.9,32.8-6.4,49.6-2.4,11.4,2.7,20.1,9.7,28.2,17.7a166.7,166.7,0,0,1,23.7,30.7c-4.3-.8-8.7-2.1-13.1-2.2-12.5-.4-23.8,3.8-34.5,9.7-8.4,4.6-16.4,10-25.9,12q-32.5,7-59.6-12.4Z"/><path d="M570.3,447.5H541a78.9,78.9,0,0,1,23.3-11.1,3.1,3.1,0,0,1,2.6,1.4C568.2,440.9,569.1,444.1,570.3,447.5Z"/></g></svg>
+        </a>
+        <article class="banner-text">
+            <h3>RESTURANTE <br> LAS TRES AMIGAS</h3>
+            <p>Somos un restaurante Gourmet en Antigua Guatemala</p>
+        </article>
+        </div>
+    </section>
+
+    <!-- ---slogan  -------->
+    <section id="menu" class="menu">
+       <h2>Menú ENTRADAS</h2>
+       <P>Todos los tacos incluyen tres tortillas  de maiz con costra de mozzarella</P>
+        <article class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/tabla de charcuteria.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tabla de charcuteria</h3>
+                    <p>tabla de jamones curados, quesos, frutos secos,tomate deshidratado, mix de aceituna, manzanas, mermelada, pan artesanal y trufas de chocolate</p>
+                    <h1>Q250</h1>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/fuego de mar.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tacos del mar y fuego</h3>
+                    <p>camarones en tempura con una salsa dulce y sutilmente picante, aguacate, tomate, cilantro y crema. plato estrella</p>
+                    <h1>Q120</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/carppacio de res.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Carpaccio de res</h3>
+                    <p>Lomito, queso parmesano, cebolla morada, alcaparras, arúgula, aceite de oliva y limón.</p>
+                    <h1>Q79</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/jalapeño poppers.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Jalapeño poppers</h3>
+                    <p>jalapeño en tempura relleno con dip de queso crema con especias y tocino enrollado</p>
+                    <h1>Q65</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/Veggie poppers.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Veggie poppers</h3>
+                    <p>jalapeño en tempura relleno con dip de queso crema con especias.</p>
+                    <h1>Q65</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/tamalito de elote.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tamalito de elote</h3>
+                    <p>Platillo agridulce, salsa verde, pico de gallo, crema, mousse de aguacate y chipotle.</p>
+                    <h1>Q60</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/ensalada-caprese2.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Ensalada caprese</h3>
+                    <p>Tomate, mozzarella fresca, pesto, reduccion de vinagre balsamico y aceite de oliva.</p>
+                    <h1>Q60</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/huevos groument.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Huevos gourmet</h3>
+                    <p>Huevos duros, yema infusionada con mostaza, mayonesa y poco pimenton</p>
+                    <h1>Q55</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/aros de cebolla.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Aros de cebolla</h3>
+                    <p>Con tempura de cerveza</p>
+                    <h1>Q55</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/Beer-Battered-Fries.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Beer battered fries</h3>
+                    <p>Papas fritas con tempura de cerveza</p>
+                    <h1>Q55</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/chips de camote.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>chips de camote</h3>
+                    <p>rodajas semifinas de camote frito en aceite.</p>
+                    <h1>Q45</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/elote picante.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Elote picante</h3>
+                    <p>Granos de maiz dulce, chiles secos, cilantro y queso parmesano</p>
+                    <h1>Q45</h1>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- --     contact     ------>
+    <section id="contacto" class="contact">
+        <h3>contacto</h3>
+        <h4>Telefono: (502) 2323-1212</h4>
+        <p>Ubicación: 2da calle 20-13 Vista Hermosa 1, nivel 18 de hotel Vista Quince, zona 15</p>
+        <article class="icon-i">
+            <a href=""><i class="fa-brands fa-waze"></i></a>
+            <a href=""><i class="fa-brands fa-waze"></i></a>
+        </article>
+        <article class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1581889254403!2d-90.49330672615847!3d14.590060377337176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a36f5fbd2971%3A0x809c494486c6e58f!2sHotel%20Vista%20Quince!5e0!3m2!1ses!2sgt!4v1761672060359!5m2!1ses!2sgt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
+        <button id="button-up" class="top btn-inicio" href="#top">Arriba</button>
+    </section>
+
+
+
+
+    <!-- --     footer      ----->
+    <footer class="footer">
+        <div class="container-footer">
+        <article class="footer-img">
+            <a href=""><img src="img/logo-white.png" alt=""></a>
+        </article>
+        <article>
+            <h2>Horario: Lunes a Viernes : 12:00 pm a 10:00 pm </h2>
+            <h2>sábado: 07:00 am a 10:00 pm</h2>
+            <h2>Domingo: 07:00 am a 09:00 pm</h2>
+        </article>
+        <article>
+            <h2>Correo: restuarantelastresamigas@.com</h2>
+            <h2>nosotros: </h2>
+            <h2>Telefono: </h2>
+        </article>
+        </div>
+        <hr>
+        <div class="header-footer">
+            <a href="index.html">inicio</a>
+            <a href="index.html#nosotros">nosotros</a>
+            <a href="index.html#menu">menú</a>
+            <a href="index.html#nosotros">ubicación</a>
+        </div>
+    </footer>
+        
+        
+    <div class="footer-nav">
+        <a href="#">&copy;RESTAURANTELAS TRES AMIGAS | desarrollo web 2025</a>
+    </div>
+
+    <!-- --- script     -->
+    <script src="modules.js" type="module"></script>
+    <script src="button-top.js"></script>
+    <script src="scroll.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Guzman"> 
+    <meta name="description" content="Desarrollo web Html, Css y JavaScript">
+    <meta name="keywords" content="código, HTML, y más">   <meta name="Url" content=""> 
+    <title>Menú | Tacos</title>
+    <link rel="icon" type="x-icon" href="img/Logo Red On Black.png">
+    <link rel="stylesheet" href="styles/tacos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  hamburgers libreria css  -->
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---- libreria scroll  ------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+<body>
+    <header class="header" id="inicio" id="top">
+        <nav class="menu-bars">
+            <a class="img-logo" href="">
+                    <img src="img/Logo Red On Black.png" alt="" width="70px">
+                </a>
+            <ul class="nav links">
+                <li><a class="link-bar" href="index.html">INICIO</a></li>
+                <li><a class="link-bar" href="index.html#nosotros">NOSOTROS</a></li>
+                <li><a class="link-bar" href="index.html#menu">MENÚ</a></li>
+                <li><a class="link-bar" href="index.html#contacto">UBICACION</a></li>
+                <li><span><a class="icon-phone" href=""><i class="fa-solid fa-phone"></i></a>(502+) 2323-1212</span></li>
+            </ul>
+            
+        <ul class="icon">
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-waze"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-waze"></i></a></li>
+        </ul>
+        </nav>
+
+        <!-- ---    hamburger-responsive    -->
+        <button class="hamburger--collapse hamburger" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+        </button>
+    </header>
+
+    <!--    banner      -->
+    <section   class="banner">
+        <div class="entrance">
+        <a class="icon-a" href="entrada.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 592.9 511.1"><defs><style></style></defs><g id="Capa_6" data-name="Capa 6"><path class="cls-1" d="M473.9,184.5c-41.4-36.6-87.7-63.6-146.6-57.5-8,.8-16.9.6-24.4-2-48-16.2-58.1-14.2-89,20.4-30.9-30.9-54.5-36.7-82.3-20.5-26.1,15.2-33.2,38.8-22.9,79.1-48.5,3.2-79.4,30.6-68.2,66.8,8.5,27.1,1.4,49.4-2.9,73.7-1.3,7.3-3.3,14.4-3.9,21.7-3,38.7,5.7,48.4,44,48.4q134.3.3,268.6.1c53.5,0,107.1.3,160.6-.1,31.2-.3,46-12.4,47.1-38.2C557.2,300,531.1,235.2,473.9,184.5Zm-80-31.7c15.6,6.5,24.6,18.7,21.5,38.8l-63.6-29.3C363.5,147.3,378.7,146.4,393.9,152.8Zm-94.5,1c-21.8-1.8-42.6-3.1-67.9,3C259.6,125.2,278.7,125.4,299.4,153.8Zm-177.7,25c1.1-30.9,24.5-47.2,50.5-40.6,11.6,3,21.8,9.6,23.1,20.7s-12.6,7.7-19,11.9c-9.9,6.4-20.8,11.3-31.5,16.3-5.4,2.5-9.5,10.7-16.4,6.4S121.6,181.1,121.7,178.8Zm-62,73.6h0c0-.4.1-.8.1-1.1v-.4c.1-.9.3-1.7.4-2.5s.1-.1.1-.2l.3-1.2a5.6,5.6,0,0,1,.4-1.2l.3-1c.1-.2.2-.3.2-.5l.5-1a4.1,4.1,0,0,1,.5-.9l.9-1.6.4-.6a1,1,0,0,0,.4-.5l1.6-1.8A17.8,17.8,0,0,1,69,235l1.2-.9,1.2-.9,4.3-2.4,1.5-.7,1.7-.7,3.3-1.2,2.2-.7,1.8-.5a90.6,90.6,0,0,1,10.7-2.3h0l-8.4,11.6L71.8,259.2l-8.2,11.4q-3.9-9.3-3.9-16.8ZM482.2,394H330.1c-84.8,0-169.7-.2-254.5.2-14.7.1-23.8-.3-22.7-20.3,5.1-88,63.7-164.1,150-192s191.3.4,243.2,67.3c23.1,29.9,35.6,64,36.1,102.1C482.4,364.8,482.2,378.4,482.2,394Zm18.3-143.6c10.6,6.9,13.7,18.1,19.1,31.6C484.2,286.1,508.3,258.9,500.5,250.4Z"/><path class="cls-2" d="M96.9,224.7l-8.4,11.6,8.4-11.6Z"/><path class="cls-3" d="M108.9,336.4c-6.6.7-13.3-1.3-14.4-9s4.7-10.8,16.4-11.6c2.6-.3,9,2,10.2,9.1S115.3,335.7,108.9,336.4Z"/><path class="cls-4" d="M371.3,241.2c-1.3,8.1-7.8,8.9-14.5,8.4s-13-3.9-11.7-11.4,8.1-8.8,14.9-9.1C366.4,230.6,372.6,233,371.3,241.2Z"/><path class="cls-5" d="M285,326.5c-.5,8.2-7.8,9-13.2,10.3-8.1-1.5-13.5-4.8-12.3-12.8s6.7-8,12.7-7.9S285.6,318.1,285,326.5Z"/><path class="cls-6" d="M449.5,325c-1.2,9.3-7,11.9-13.5,11.5s-13.5-2.9-13.1-10.8,6.6-9.7,13.6-9.7S448.5,318.5,449.5,325Z"/></g></svg>
+        </a>
+        <article class="banner-text">
+            <h3>RESTURANTE <br> LAS TRES AMIGAS</h3>
+            <p>Somos un restaurante Gourmet en Antigua Guatemala</p>
+        </article>
+        </div>
+    </section>
+
+    <!-- ---slogan  -------->
+    <section id="menu" class="menu">
+       <h2>Menú TACOS</h2>
+       <P>Todos los tacos incluyen tres tortillas  de maiz con costra de mozzarella</P>
+        <article class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/entradas/fuego de mar.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tacos del mar y fuego</h3>
+                    <p>camarones en tempura con una salsa dulce y sutilmente picante,  aguacate, tomate, cilantro y crema.</p>
+                    <h1>Q99</h1>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/tacos tacos-al-pastor.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tacos al pastor</h3>
+                    <p>cerdo desmenuzado con salsa de adobo, cebolla caramelizada y cubos de piña.</p>
+                    <h1>Q80</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/tacos de res.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tacos de res</h3>
+                    <p>Lomito, cebolla salteada, aguacate, crema y pico de gallo</p>
+                    <h1>Q90</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/tacos de pescado.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tacos de pescado</h3>
+                    <p>Tilapia en tempura, aguacate, repollo y chipotle.</p>
+                    <h1>Q85</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/tacos de pulled pork.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tacos de pulled pork</h3>
+                    <p>Cerdo desmenuzado, cebolla salteada y mousse de aguacate.</p>
+                    <h1>Q80</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/tacos de pollo.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tacos de pollo</h3>
+                    <p>Pollo desmenuzado, cebolla salteada, cilantro, aguacate, pico de gallo y chipotle.</p>
+                    <h1>Q75</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/burrito de res.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Burrito de res</h3>
+                    <p>Tortilla de harina , lomito , cebolla salteada, frijol, queso, aguacate, pico de gallo y chipotle.</p>
+                    <h1>Q95</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/burrito de pollo.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Burrito de pollo</h3>
+                    <p>Tortilla de harina, pollo, cebolla salteada, frijol, queso, aguacate, pico de gallo y chipotle.</p>
+                    <h1>Q75</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/quesadillas-de-carne.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Quesadilla de res</h3>
+                    <p>Tortilla de harina, lomito, queso, cebolla , chile pimiento salteado, costra de queso cheddar y jalapeño.</p>
+                    <h1>Q95</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/tacos/quesadilla de pollo.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Quesadilla de pollo</h3>
+                    <p>Tortilla de harina, pollo, queso, cebolla, chile pimiento salteado, costra  de queso cheddar y jalapeño.</p>
+                    <h1>Q75</h1>
+                </div>
+            </div>
+
+            
+        </article>
+    </section>
+
+    <!-- --     contact     ------>
+    <section id="contacto" class="contact">
+        <h3>contacto</h3>
+        <h4>Telefono: (502) 2323-1212</h4>
+        <p>Ubicación: 2da calle 20-13 Vista Hermosa 1, nivel 18 de hotel Vista Quince, zona 15</p>
+        <article class="icon-i">
+            <a href=""><i class="fa-brands fa-waze"></i></a>
+            <a href=""><i class="fa-brands fa-waze"></i></a>
+        </article>
+        <article class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1581889254403!2d-90.49330672615847!3d14.590060377337176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a36f5fbd2971%3A0x809c494486c6e58f!2sHotel%20Vista%20Quince!5e0!3m2!1ses!2sgt!4v1761672060359!5m2!1ses!2sgt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
+        <button id="button-up" class="top btn-inicio" href="#top">Arriba</button>
+    </section>
+
+
+
+
+    <!-- --     footer      ----->
+    <footer class="footer">
+        <div class="container-footer">
+        <article class="footer-img">
+            <a href=""><img src="img/logo-white.png" alt=""></a>
+        </article>
+        <article>
+            <h2>Horario: Lunes a Viernes : 12:00 pm a 10:00 pm </h2>
+            <h2>sábado: 07:00 am a 10:00 pm</h2>
+            <h2>Domingo: 07:00 am a 09:00 pm</h2>
+        </article>
+        <article>
+            <h2>Correo: restuarantelastresamigas@.com</h2>
+            <h2>nosotros: </h2>
+            <h2>Telefono: </h2>
+        </article>
+        </div>
+        <hr>
+        <div class="header-footer">
+            <a href="index.html">inicio</a>
+            <a href="index.html#nosotros">nosotros</a>
+            <a href="index.html#menu">menú</a>
+            <a href="index.html#nosotros">ubicación</a>
+        </div>
+    </footer>
+        
+        
+    <div class="footer-nav">
+        <a href="#">&copy;RESTAURANTELAS TRES AMIGAS | desarrollo web 2025</a>
+    </div>
+
+    <!-- --- script     -->
+    <script src="modules.js" type="module"></script>
+    <script src="button-top.js"></script>
+    <script src="scroll.js"></script>
+
+
+</body>
+</html>

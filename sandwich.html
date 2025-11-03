@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Guzman"> 
+    <meta name="description" content="Desarrollo web Html, Css y JavaScript">
+    <meta name="keywords" content="código, HTML, y más">   <meta name="Url" content=""> 
+    <title>Menú | Sandwich</title>
+    <link rel="icon" type="x-icon" href="img/Logo Red On Black.png">
+    <link rel="stylesheet" href="styles/sandwich.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  hamburgers libreria css  -->
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---- libreria scroll  ------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+<body>
+    <header class="header" id="inicio" id="top">
+        <nav class="menu-bars">
+            <a class="img-logo" href="">
+                    <img src="img/Logo Red On Black.png" alt="" width="70px">
+                </a>
+            <ul class="nav links">
+                <li><a class="link-bar" href="index.html">INICIO</a></li>
+                <li><a class="link-bar" href="index.html#nosotros">NOSOTROS</a></li>
+                <li><a class="link-bar" href="index.html#menu">MENÚ</a></li>
+                <li><a class="link-bar" href="index.html#contacto">UBICACION</a></li>
+                <li><span><a class="icon-phone" href=""><i class="fa-solid fa-phone"></i></a>(502+) 2323-1212</span></li>
+            </ul>
+            
+        <ul class="icon">
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-waze"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-waze"></i></a></li>
+        </ul>
+        </nav>
+
+        <!-- ---    hamburger-responsive    -->
+        <button class="hamburger--collapse hamburger" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+        </button>
+    </header>
+
+    <!--    banner      -->
+    <section   class="banner">
+        <div class="entrance">
+        <a class="icon-a" href="entrada.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 592.9 511.1"><g id="Capa_2" data-name="Capa 2"><path d="M497,382.2c-3-14.6-15.6-20.9-29.5-23.3-11.5-2-9.1-7.5-9.6-17.4-1-23.3,12.8-49.9-12.8-70.1l44.5-10.5c3.9-1,7.6-2.7,7.5-7.6s-4.7-8.3-9.5-7.4c-19.2,3.5-21.1-8-18.4-21.7,5.2-26.6-8.3-40.6-29.4-54C377.7,130.6,316.7,89.4,256,47.7c-13.9-9.6-21.7-8.5-33.2,3.4-37.5,39.1-75.7,77.7-114.9,115-17.6,16.7-29.3,33.6-24.8,59,2.1,12.1,2,24.4-16.9,20.7-4.6-.9-10.1.1-11,6.1-1.2,7.5,5.4,8.8,10.5,10,13,3.2,26.2,5.9,40,8.9-14.7,19.9-12.5,19.9-13,42.4-.3,19.6,13.3,45.7-23.8,52.9-18.3,3.5-20.9,29.3-4.6,36.4C86,411.9,84.7,427.3,83,444.1c-1.9,18.9,5.2,24,23.9,23.8,108.4-.8,216.8-.3,325.1-.4,40.7-.1,36.7,4.9,37.2-36,.1-7-4.7-16.2,5.6-20.6C487.6,405.4,500.3,398.5,497,382.2ZM148.8,149c27-27.5,54.4-54.5,81.6-81.8,5.4-5.4,9.3-11.2,18.9-4.6,58.7,40,117.9,79.2,182.6,122.5H116.2C125,169.9,137.9,160.2,148.8,149Zm-48.2,73.9c-.9-13.5.6-20.7,18-20.6,105.2,1,210.3,1.2,315.4,0,21.2-.3,16.8,11.4,17.6,23.4,1,13.5-.5,20.9-18,20.5-52.5-1.4-105.1-.5-157.7-.5s-105.2-1.2-157.7.5C97,246.9,101.4,234.9,100.6,222.9Zm319.3,95.2c-47.9-.2-95.8-.1-143.8-.1s-94.2-.1-141.4.1c-13.5.1-27.5-1.2-26.9-18.1.5-14.5,13.1-16.3,26.2-16.9a227.8,227.8,0,0,1,81.1,10.4c46.1,14.8,90.7,9,135.6-3.4,22.9-6.3,46.2-7.1,69.9-6.9,12.7.1,23.3,3.9,23.8,16.8C445.1,315.2,433.1,318.2,419.9,318.1ZM433,353.2c-19.6,18.5-45.2,11.2-57.4-18,17.7,0,34.7-.2,51.6.2,4.7.1,12.1-3.6,13.7,4.2C442.1,345.3,436.9,349.6,433,353.2Zm-79.3-17c-4.5,19.2-17.7,26.4-32.8,26.8s-28.9-8.7-35.1-26.8Zm-87.2-.2c-6.6,18.8-19.4,28.4-37.1,26.8-14.7-1.3-28.1-8.3-30.4-26.8Zm-88.2-.8c-17.7,31.4-43.9,36.6-61.8,15.1-2.8-3.4-7.2-6.9-4.9-12.2s6.8-2.7,10.3-2.8C139.8,335.1,157.7,335.2,178.3,335.2Zm-22.5-74.1H397.1C316.4,292.5,235.4,292.5,155.8,261.1ZM451.4,438c2.9,12-4.9,14-15.2,13.9-53.4-.3-106.8-.2-160.2-.2s-105.2-.3-157.8.3c-12.5.1-19.1-2.3-17.9-16.7.9-11-1.7-20.1,16-20.5,36.8-1,73.8,1.8,110.2-.7s71.5-1.2,106.4-.5c36.6.7,73.8-8.7,110.5,1.6C459.1,419.7,449.5,430.4,451.4,438Zm28.3-51.7c-.7,6.4-6.7,8.4-11.8,10-15.4,4.7-31.4,5.8-46.1-1-9.6-4.3-17.4-4.9-26.5.4-4.5,2.6-10.9,4.4-15.9,3.5-27.5-5-55-.3-82.4-.9-38.7-.9-77.2-.5-115.8-.1-28.2.3-56.4-.5-84.7,0-9.1.2-24.6-.6-23.4-13.5,1-10.2,15.1-11.4,25.5-11.9,2.4-.1,4.7,0,6.3,0,15.1-1.8,27.8,6.4,42.4,5.9,17.6-.7,28.4-19.4,40.5-19.1s22.8,17.8,39.9,19.1c20,1.4,33.5-16.6,48.1-17.7s27.7,18.8,47.8,17.9c18-.8,29.3-20.3,41.9-18.7s23.7,19.7,41.2,18c12.3-1.3,24.5-4.3,36.9-5.3,8.4-.7,17.3-1.3,25.4,3C473.5,378.3,480.4,379.1,479.7,386.3Z"/><path d="M192.9,146.9c-2.6-.5-8.6,3.7-8.7,6.1-.5,7.8,6.1,12.3,12.1,15s7.2-3.5,9.8-7.8C204.4,153.3,199.8,148.1,192.9,146.9Z"/><path d="M216.7,109.8c-4.8-2.5-9.8,3.1-10.3,6.9-.9,8,6.9,11,13.4,16.4,2.9-3.3,7.8-6.4,8.1-9.9C228.5,116.3,221.8,112.4,216.7,109.8Z"/><path d="M314.6,146.8c-6.5,1-11.1,6.5-12.8,11.8s4.1,9.7,8.4,9.5c7.2-.4,11-6.7,13.9-13C322.3,150.4,320,145.9,314.6,146.8Z"/><path d="M132.9,234.8c7.4-.5,11.4-7.1,15.7-14.7-3.4-2.5-7-7.1-10.3-7-6.4.4-11,6.3-12.9,11.8S128.9,235,132.9,234.8Z"/><path d="M389.2,236.3c2.9-3.4,8.5-7.1,8.1-10a15,15,0,0,0-13.5-13.1c-2.6-.2-7.9,4.4-8,6.9C375.7,227.9,382.6,231.3,389.2,236.3Z"/><path d="M207.5,419.8c-4.5-.2-9.5,3.4-8.1,8.7s6.6,10.2,12.7,12.5c5.1-1.3,9.2-4.8,8.1-9.5S214.2,420.1,207.5,419.8Z"/></g></svg>
+        </a>
+        <article class="banner-text">
+            <h3>RESTURANTE <br> LAS TRES AMIGAS</h3>
+            <p>Somos un restaurante Gourmet en Antigua Guatemala</p>
+        </article>
+        </div>
+    </section>
+
+    <!-- ---slogan  -------->
+    <section id="menu" class="menu">
+       <h2>Menú SANDWICH</h2>
+       <P>Todos los tacos incluyen tres tortillas  de maiz con costra de mozzarella</P>
+        <article class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/sandwich/Sándwich cubano.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Sándwich cubano</h3>
+                    <p>Cerdo demenuzado, jamon dulce, salami, queso suizo, pepinillos y mostaza.</p>
+                    <h1>Q99</h1>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/sandwich/French dip sandwich.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>French dip sandwich </h3>
+                    <p>Pan chapata relleno de carne de res desmenuzada, cebolla caramelizada, queso suizo y fondo de res.</p>
+                    <h1>Q88</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/sandwich/Grilled pollo.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Grilled pollo </h3>
+                    <p>Pan brioche, pollo asado, queso suizo, tocino, tomate y lechuga.</p>
+                    <h1>Q88</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/sandwich/Tempura chicken.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tempura chicken</h3>
+                    <p>Pan brioche, pollo en tempura, queso suizo, tomate y lechuga.</p>
+                    <h1>Q88</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/menu/sandwich/El italiano.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>El italiano</h3>
+                    <p>Baguette con prosciutto, arrúgala, mozzarella fresca, tomate y reducción de vinagre balsámico.</p>
+                    <h1>Q88</h1>
+                </div>
+            </div>
+
+            
+        </article>
+    </section>
+
+    <!-- --     contact     ------>
+    <section id="contacto" class="contact">
+        <h3>contacto</h3>
+        <h4>Telefono: (502) 2323-1212</h4>
+        <p>Ubicación: 2da calle 20-13 Vista Hermosa 1, nivel 18 de hotel Vista Quince, zona 15</p>
+        <article class="icon-i">
+            <a href=""><i class="fa-brands fa-waze"></i></a>
+            <a href=""><i class="fa-brands fa-waze"></i></a>
+        </article>
+        <article class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1581889254403!2d-90.49330672615847!3d14.590060377337176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a36f5fbd2971%3A0x809c494486c6e58f!2sHotel%20Vista%20Quince!5e0!3m2!1ses!2sgt!4v1761672060359!5m2!1ses!2sgt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
+        <button id="button-up" class="top btn-inicio" href="#top">Arriba</button>
+    </section>
+
+
+
+
+    <!-- --     footer      ----->
+    <footer class="footer">
+        <div class="container-footer">
+        <article class="footer-img">
+            <a href=""><img src="img/logo-white.png" alt=""></a>
+        </article>
+        <article>
+            <h2>Horario: Lunes a Viernes : 12:00 pm a 10:00 pm </h2>
+            <h2>sábado: 07:00 am a 10:00 pm</h2>
+            <h2>Domingo: 07:00 am a 09:00 pm</h2>
+        </article>
+        <article>
+            <h2>Correo: restuarantelastresamigas@.com</h2>
+            <h2>nosotros: </h2>
+            <h2>Telefono: </h2>
+        </article>
+        </div>
+        <hr>
+        <div class="header-footer">
+            <a href="index.html">inicio</a>
+            <a href="index.html#nosotros">nosotros</a>
+            <a href="index.html#menu">menú</a>
+            <a href="index.html#nosotros">ubicación</a>
+        </div>
+    </footer>
+        
+        
+    <div class="footer-nav">
+        <a href="#">&copy;RESTAURANTELAS TRES AMIGAS | desarrollo web 2025</a>
+    </div>
+
+    <!-- --- script     -->
+    <script src="modules.js" type="module"></script>
+    <script src="button-top.js"></script>
+    <script src="scroll.js"></script>
+
+
+</body>
+</html>
