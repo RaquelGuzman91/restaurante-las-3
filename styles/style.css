@@ -28,7 +28,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-x: hidden;
+
 
 }
 
@@ -41,6 +41,7 @@ body{
   z-index: 200;
   padding: 1rem 0px;
   box-shadow: 0px  1px 10px rgba(0, 0, 0, 0.404);
+  background: white;
 }
 .header .menu-bars{
   width: 75%;
@@ -48,7 +49,6 @@ body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 200;
 }
 .header .menu-bars .links{
   display: flex;
@@ -66,7 +66,7 @@ body{
 }
 .header .menu-bars .links li .link-bar:hover{
   border: none;
-  color: #585858;
+  color: #F7A936;
 }
 
 .header .menu-bars .links li span{
@@ -98,7 +98,6 @@ body{
   background: #731012;
   padding: .9rem;
   border-radius: 50px;
-  z-index: 3;
 }
 
 .header .menu-bars .icon li a{
@@ -367,7 +366,7 @@ body{
   text-align: left;
   width: 90%;
   color: white;
-  font-size: clamp(26px, 6vw, 80px);  /*5rem*/
+  font-size: clamp(40px, 6vw, 80px);  /*5rem*/
   font-weight: 400;
   font-family: "Inika", serif;
   text-transform: capitalize;
@@ -382,7 +381,7 @@ body{
   padding: 2rem;
 }
 .promotions .text .text-info h2{
-  font-size: clamp(7px, 2vw, 20px);/*1.3rem*/
+  font-size: clamp(20px, 2vw, 20px);/*1.3rem*/
   color: #585858;
   font-family: "Karla", sans-serif;
   font-weight: 500;
@@ -391,11 +390,10 @@ body{
 /*------  */
 .section-link{
   display: flex;
-  min-height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   gap: 3rem;
 }
 .section-link h3{
@@ -833,6 +831,11 @@ body{
 @media (max-width: 890px){
   .section-link h3{
   width: 90%;
+}
+}
+@media(max-width: 600px){
+  .section-link{
+  padding: 1rem;
 }
 }
 @media (max-width: 550px){
