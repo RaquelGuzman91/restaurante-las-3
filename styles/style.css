@@ -20,6 +20,7 @@
 
 html{
   scroll-behavior: smooth;
+
 }
 
 body{
@@ -27,6 +28,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
+
 }
 
 .header{
@@ -95,6 +98,7 @@ body{
   background: #731012;
   padding: .9rem;
   border-radius: 50px;
+  z-index: 3;
 }
 
 .header .menu-bars .icon li a{
@@ -143,17 +147,7 @@ body{
   /*animation: zoomBackground 20s ease-in-out infinite;*/
 }
 
-@keyframes zoomBackground {
-  0% {
-    background-size: 100%;
-  }
-  50% {
-    background-size: 110%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}
+
 
 
 .banner .banner-text{
