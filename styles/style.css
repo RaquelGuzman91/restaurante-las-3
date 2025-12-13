@@ -168,6 +168,7 @@ body{
   font-weight: 100;
 }
 
+
 /*---------  menu    -------*/
 .slogan{
   min-height: 27vh;
@@ -393,7 +394,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 4rem 1rem;
-  gap: 3rem;
+  gap: 2rem;
 }
 .section-link h3{
   width: 40%;
@@ -402,7 +403,12 @@ body{
   font-size: clamp(20px, 6vw, 50px); /*3rem*/
   text-transform: uppercase;
   font-family: "Inika", serif;
-
+}
+.section-link p{
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #585858;
 }
 .section-link a svg{
   fill: white;

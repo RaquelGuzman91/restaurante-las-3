@@ -181,6 +181,7 @@ body{
   height: 210px;
   z-index: 1;
   cursor: default;
+  pointer-events: none;
 }
 .banner .icon-a svg{
   fill: white;
