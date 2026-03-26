@@ -498,7 +498,7 @@ body{
     transform:  translateX(100%);
     transition: .4s ease-in-out;
     font-size: 1.7rem;
-    padding-top: 1rem;
+    padding-top: 1.7rem;
   }
   .header .menu-bars .links li {
   text-align: center;

@@ -499,6 +499,7 @@ body{
     transform:  translateX(100%);
     transition: .4s ease-in-out;
     font-size: 2rem;
+    padding-top: 1.7rem;
   }
   .header .menu-bars .links.is-active{
     transform: translateX(0);

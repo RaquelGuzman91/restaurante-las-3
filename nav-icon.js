@@ -11,12 +11,17 @@ export default function menuHamburger(btnHamburger, nav, linkBar) {
             d.querySelector(nav).classList.toggle("is-active");
             d.querySelector(btnHamburger).classList.toggle("is-active")
         }
-        if(e.target.matches(linkBar)){
+        if(e.target.matches(linkBar)) {
+            e.preventDefault();
             d.querySelector(nav).classList.remove("is-active");
             d.querySelector(btnHamburger).classList.remove("is-active");
+
+            setTimeout(() =>{
+                window.location.href = e.target.href;
+            }, 600);
         }else{
             headerBg.classList.add()
         }
-    })
+    });
 }
 
