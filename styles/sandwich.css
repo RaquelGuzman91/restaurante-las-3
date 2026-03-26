@@ -93,19 +93,17 @@ body{
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 1rem;
-  background: #731012;
+  gap: .7rem;
   padding: .9rem;
   border-radius: 50px;
 }
 
 .header .menu-bars .icon li a{
-  color: #731012;
-  font-size: 1rem;
-  background: white;
-  padding: .4rem;
-  border: 1px solid white;
-  border-radius: 50%;
+  color: #F2F2F2;
+  font-size: 1.3rem;
+  background: #731012;
+  padding: .6rem .5rem;
+  border-radius: 7px;
   transition: all 500ms ease;
 }
 .header .menu-bars .links li a:hover {
@@ -115,8 +113,7 @@ body{
 }
 .header .menu-bars .icon li a:hover{
   color: white;
-  background: #731012;
-  border: 1px solid white;
+  background: #F7A936;
 }
 
 /*-------- menu-responsive    ------*/
@@ -356,9 +353,9 @@ body{
 
 /*------  top    ----*/
 .contact .top{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   bottom: 0;
-  background: #731012;
+  background: #F7A936;
   font-family: "Instrument Sans", sans-serif;
   padding: .7rem 3rem;
   text-decoration: none;
@@ -367,7 +364,7 @@ body{
   border: none;
   cursor: pointer;
   transition: .5s ease;
-  border: 2px solid #731012;
+  border: 2px solid #F7A936;
 }
 .contact .top:hover{
   color: #585858;
@@ -494,7 +491,7 @@ body{
     align-items: center;
     gap: 1rem;
     height: 100dvh;
-    width: 100%;
+    width: 80%;
     top: 0;
     right: 0;
     position: fixed;
@@ -502,8 +499,19 @@ body{
     z-index: 20;
     transform:  translateX(100%);
     transition: .4s ease-in-out;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    padding-top: 1rem;
   }
+  .header .menu-bars .links li {
+  text-align: center;
+  width: 90%;
+  border-bottom: 2px solid #d3d3d3;
+  padding-bottom: 1rem;
+}
+ .header .menu-bars .links .li-phone {
+  border: none;
+  border-bottom: none;
+}
   .header .menu-bars .links.is-active{
     transform: translateX(0);
   }
