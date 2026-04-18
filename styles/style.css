@@ -31,98 +31,7 @@ body{
   overflow-x: hidden;
 }
 
-.header{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  z-index: 200;
-  padding: 1rem 0px;
-  box-shadow: 0px  1px 10px rgba(0, 0, 0, 0.404);
-  background: white;
-}
-.header .menu-bars{
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .menu-bars .links{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  list-style: none;
-}
-.header .menu-bars .links li .link-bar{
-  text-decoration: none;
-  font-family: "Karla", sans-serif;
-  color: #731012;
-  border: none;
-  transition: .5s ease;
-}
-.header .menu-bars .links li .link-bar:hover{
-  border: none;
-  color: #F7A936;
-}
 
-.header .menu-bars .links li span{
-  font-family: "Karla", sans-serif;
-  color: #731012;
-}
-.header .menu-bars .links li span .icon-phone {
-  margin: .5rem;
-  color: white;
-  background: #731012;
-  padding: .2rem;
-  font-size: .7rem;
-  border-radius: 50%;
-  border: 1px solid #731012;
-  transition: all 500ms ease;
-}
-.header .menu-bars  .img-logo{
-  width: 70px;
-}
-.header .menu-bars  .img-logo img{
-  width: 70px;
-}
-
-.header .menu-bars .icon{
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: .7rem;
-  padding: .9rem;
-  border-radius: 50px;
-}
-
-.header .menu-bars .icon li a{
-  color: #F2F2F2;
-  font-size: 1.3rem;
-  background: #731012;
-  padding: .6rem .5rem;
-  border-radius: 7px;
-  transition: all 500ms ease;
-}
-.header .menu-bars .links li a:hover {
-  color: #731012;
-  background: white;
-  border: 1px solid #731012;
-}
-.header .menu-bars .icon li a:hover{
-  color: white;
-  background: #F7A936;
-}
-
-/*-------- menu-responsive    ------*/
-.header .hamburger{
-  z-index: 30;
-  position: absolute;
-  right: 1rem;
-  display: none;
-}
 
 
 
@@ -469,11 +378,11 @@ body{
   fill: #838383;
   width: 12rem;
   height: 12rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   background: none;
   border-radius: 50%;
   transition: .5s ease;
-  z-index: 1;
+  z-index: 2;
   position: relative;
 }
 .section-link .container-link .link-img .link-arrow{
@@ -487,6 +396,8 @@ body{
   transition: all 500ms ease;
   z-index: 2;
   opacity: 1;
+  cursor: default;
+  pointer-events: none;
 }
 .section-link .container-link .link-img .icono-link svg:hover{
   fill: #F2F2F2;
@@ -553,7 +464,7 @@ body{
   text-align: center;
   color: #707070;
   font-family: "Inika", serif;
-  font-size: clamp(15px, 1.3vw, 35px); /*1.3rem*/
+  font-size: clamp(12px, 1.2vw, 35px); /*1.3rem*/
   font-weight: 100;
   line-height: 1.8rem;
 }
@@ -590,235 +501,14 @@ body{
 }
 
 /*------  CONTACT   -----*/
-.contact{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: .9rem;
-  padding: 2rem 1rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
- 
-}
-.contact h3{
-  text-align: center;
-  font-size: clamp(40px, 6vw, 60px);/*3.4rem*/
-  font-family: "Inika", serif;
-  text-transform: capitalize;
-  color: #731012;
-  padding-bottom: 1.5rem;
-}
-.contact h4,
-.contact p{
-  text-align: center;
-  font-family: "Instrument Sans", sans-serif;
-  font-size: clamp(12px, 1.5vw, 30px);/*1.2rem*/
-  color: #838383;
-  font-weight: 200;
-}
-.contact .icon-i{
-  padding: 1rem 0px;
-  display: flex;
-  gap: 2rem;
-}
-.contact .icon-i a{
-  font-size: 3rem;
-  background: #585858;
-  padding: .5rem;
-  color: white;
-  border-radius: 50%;
-  border: 2px solid #585858;
-  transition: .5s ease;
-}
-.contact .icon-i a:hover{
-  font-size: 3rem;
-  background: white;
-  color: #585858;
-  border: 2px solid #585858;
-}
-.contact .map{
-  width: 80%;
-  height: 75vh;
-  padding-bottom: 4rem;
-}
-
-
-/*------  top    ----*/
-.contact .top{
-  font-size: 1.1rem;
-  bottom: 0;
-  background: #F7A936;
-  font-family: "Instrument Sans", sans-serif;
-  padding: .7rem 3rem;
-  text-decoration: none;
-  color: white;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  transition: .5s ease;
-  border: 2px solid #F7A936;
-}
-.contact .top:hover{
-  color: #585858;
-  background: white;
-  border: 2px solid #585858;
-}
+/*----button-top----*/
 /*-----*/
 
 
-/*----  footer    -----*/
-.footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #731012;
-  padding: 2rem 1rem;
-  gap: 1rem;
-}
-.footer .container-footer{
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding-bottom: 2rem;
-}
-.footer .footer-img{
-  height: 150px;
-}
-.footer .footer-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.footer .container-footer h2{
-  font-size: clamp(15px, 2vw, 20px);
-  color: white;
-  font-family: "Karla", sans-serif;
-  font-weight: 100;
-}
-.footer hr{
-  width: 90%;
-  border: 1px solid rgb(156, 156, 156);
-}
-.footer .header-footer{
-  display: flex;
-  width: 90%;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.footer .header-footer a{
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  font-family: "Karla", sans-serif;
-  text-transform: uppercase;
-  border-bottom: 2px solid #731012;
-  transition: .5s ease;
-}
-.footer .header-footer a:hover{
-  border-bottom: 2px solid white;
-}
-/*------  footer-nav    ----*/
-.footer-nav{
-  background: black;
-  padding: 1.5rem 1rem;
-}
-.footer-nav a{
-  text-decoration: none;
-  color: white;
-  font-family: "Karla", sans-serif;
-  font-size: clamp(10px, 1vw, 16px);
-  font-weight: 100;
-}
 
 
 
 
-/*------- header -------*/
-@media (max-width: 1200px){
-  .header .menu-bars{
-  width: 90%;
-}
-.header .menu-bars .links{
-  gap: 1rem;
-}
-}
-@media (max-width: 900px){
-  .header .menu-bars{
-  width: 100%;
-  padding: 0px 1rem;
-}
-.header .menu-bars .links{
-  gap: .5rem;
-}
-}
-@media(max-width: 800px){
-  .header .menu-bars{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  gap: 1rem;
-}
-
-/*-------   header    -----*/
-.header .hamburger{
-  display: block;
-}
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-    background-color: #731012 !important;
-}
-  .header .menu-bars .links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
-    height: 100dvh;
-    width: 80%;
-    top: 0;
-    right: 0;
-    position: fixed;
-    background: white;
-    z-index: 20;
-    transform:  translateX(100%);
-    transition: .4s ease-in-out;
-    font-size: 1.7rem;
-    padding-top: 1.7rem;
-  }
-  .header .menu-bars .links li {
-  text-align: center;
-  width: 90%;
-  border-bottom: 2px solid #d3d3d3;
-  padding-bottom: 1rem;
-}
- .header .menu-bars .links .li-phone {
-  border: none;
-  border-bottom: none;
-}
-  .header .menu-bars .links.is-active{
-    transform: translateX(0);
-  }
-  .header .menu-bars .links li span .icon-phone {
-    margin: .5rem;
-    color: white;
-    background: #731012;
-    padding: .5rem;
-    font-size: 1rem;
-    border-radius: 50%;
-    border: 1px solid #731012;
-    transition: all 500ms ease;
-  }
-
-}
 
 
 /*------  banner    ----*/
@@ -827,7 +517,11 @@ body{
   width: 100%;
 }
 }
-
+@media(max-width: 670px){
+.banner{
+  height: 40vh;
+}
+}
 
 
 
@@ -998,6 +692,9 @@ body{
   top: -16rem;
   right: -14rem;
 }
+.section-link .container-link .link-img .icono-link:hover + .link-arrow{
+  right: -17rem;
+}
 
 }
 @media(max-width: 660px){
@@ -1019,6 +716,9 @@ body{
   .our .our-text{
   width: 95%;
 }
+.our .our-text p{
+  line-height: 1.1rem;
+}
 }
 @media (max-width: 900px){
 .our .our-text{
@@ -1032,16 +732,12 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr );
 }
-.our .our-img figure{
+.our .our-img .img-box{
   width: 100%;
   height: 200px;
 }
 }
-@media(max-width: 690px){
-  .contact h3{
-  padding-bottom: 0;
-}
-}
+
 @media(max-width: 400px){
   .our .our-img{
   width: 100%;
@@ -1049,12 +745,7 @@ body{
   grid-template-columns: repeat(1, 1fr );
 }
 }
-@media(max-width: 690px){
-  .contact .map{
-  width: 100%;
-  height: 60vh;
-}
-}
+
 
 
 
