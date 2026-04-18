@@ -222,7 +222,7 @@ body{
 .menu p{
   font-size: 1.2rem;
   font-family: "Instrument Sans", sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   color: #838383;
 }
 .menu .container{
@@ -271,6 +271,7 @@ body{
   font-family: "Caveat", cursive;
   font-size: 1.7rem;
   color: #585858;
+  font-weight: 100;
 
 }
 .menu .container .card .text h1{

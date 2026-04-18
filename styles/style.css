@@ -211,7 +211,7 @@ body{
 .menu .container-menu{
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 85%;
   height: 80vh;
   overflow: hidden;
 }
@@ -314,15 +314,17 @@ body{
 }
 
 .menu .download{
-  background: #731012;
-  font-size: 1.5rem;
+  background: #F7A936;
+  font-size: 2.3rem;
   color: white;
   text-decoration: none;
-  padding: 1rem;
-  font-family: "Inria Sans", sans-serif;
-  border-radius: 60px;
+  padding: .3rem 1rem;
+  font-family: "Italianno", cursive;
+  border-radius: 20px;
   border: 1px solid white;
   transition: all 500ms ease;
+  font-weight: 100;
+  letter-spacing: .2rem;
 }
 .menu .download:hover{
   background: white;
@@ -354,26 +356,13 @@ body{
 }
 .promotions::before{
   content: '';
-  background-color: #4e060698;
+  background-color: #4e0606;
   z-index: 2;
   position: absolute;
-  width: 35%;
+  width: 10%;
   height: 100%;
   left: 0;
   top: 0;
-}
-.promotions::after {
-  content: "";
-  width: 35%;
-  height: 100%;
-  background-image: url('../img/Full\ Color\ Antique.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  left: 0;
-  top: 0;
-  position: absolute;
-  z-index: 1;
 }
 .promotions .title2{
   width: 100%;
@@ -387,6 +376,7 @@ body{
   font-weight: 400;
   font-family: "Inika", serif;
   text-transform: capitalize;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .promotions .text{
   z-index: 3;
@@ -443,15 +433,15 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0px;
+  padding:4rem .5rem;
 }
 .section-link .container-link{
   width: 60%;
-  gap: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: .5rem;
 }
 .section-link .banner-link{
   display: flex;
@@ -467,14 +457,12 @@ body{
 }
 .section-link .container-link .banner-link p{
   font-family: "Karla", sans-serif;
-  font-size: clamp(15px, 2vw, 40px); /*3rem*/
-  font-weight: 300;
+  font-size: clamp(17px, 1.7vw, 40px); /*3rem*/
+  font-weight: 100;
   color: #838383;
 }
 .section-link .container-link .link-img{
   position: relative;
-  width: 12rem;
-  height: 12rem;
 }
 
 .section-link .container-link .link-img .icono-link svg{
@@ -487,24 +475,25 @@ body{
   transition: .5s ease;
   z-index: 1;
   position: relative;
-  
 }
-.section-link .container-link .link-img  i{
-  font-size: 4rem;
-  transform: rotate(-90deg);
-  color: #838383;
+.section-link .container-link .link-img .link-arrow{
+  height: 30rem;
+  width: 30rem;
+  top: -26rem;
+  right: -22rem;
+  transform: rotate(-110deg);
+  fill: #838383;
   position: absolute;
   transition: all 500ms ease;
-  top: 4rem;
-  left: 10rem;
+  z-index: 2;
+  opacity: 1;
 }
 .section-link .container-link .link-img .icono-link svg:hover{
   fill: #F2F2F2;
   background: #838383;
 }
-.section-link .container-link .link-img  .icono-link:hover i{
-  top: 4rem;
-  left: 12rem;
+.section-link .container-link .link-img .icono-link:hover + .link-arrow{
+  right: -25rem;
 }
 
 
@@ -551,7 +540,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 1rem;
   gap: 1rem;
 }
 .our .our-text h2{
@@ -563,8 +552,10 @@ body{
 .our .our-text p{
   text-align: center;
   color: #707070;
-  font-family: "Josefin Slab", serif;
-  font-size: clamp(15px, 1.5vw, 40px); /*1.3rem*/
+  font-family: "Inika", serif;
+  font-size: clamp(15px, 1.3vw, 35px); /*1.3rem*/
+  font-weight: 100;
+  line-height: 1.8rem;
 }
 
 .our .our-img{
@@ -572,16 +563,31 @@ body{
   display: grid;
   grid-template-columns: repeat(4, 1fr );
 }
-.our .our-img figure{
+.our .our-img  .img-box{
   width: 100%;
   height: 500px;
+  overflow: hidden;
+  position: relative;
+  transition: .5s ease;
 }
-.our .our-img figure img{
+.our .our-img .img-box img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: .5s ease;
 }
-
+.our .our-img  .img-box:hover::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.363);
+  z-index: 4;
+  transition: 2s ease-in-out;
+}
+.our .our-img  .img-box:hover img{
+  transform: scale(1.3);
+}
 
 /*------  CONTACT   -----*/
 .contact{
@@ -882,7 +888,6 @@ body{
   .menu .menu-tablet .menu-img:hover img{
     transform: scale(1.1);
   }
-  
   .menu .menu-tablet .menu-img .icon-a{
     position: absolute;
     display: flex;
@@ -964,7 +969,7 @@ body{
 }
 @media (max-width: 890px){
   .section-link h3{
-  width: 90%;
+  width: 100%;
 }
 }
 /*----------------------*/
@@ -976,37 +981,28 @@ body{
   display: block;
 }
 }
-@media(max-width: 600px){
+@media(max-width: 794px){
   .section-link{
   padding: 1rem;
+  padding-bottom: 2rem;
 }
 }
 @media (max-width: 570px){
-  .section-link{
-  gap: 1rem;
-}
-.section-link .container-link .link-img{
-  position: relative;
-  width: 8rem;
-  height: 8rem;
-}
   .section-link .container-link .link-img .icono-link svg{
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
 }
-.section-link .container-link .link-img  i{
-  font-size: 2rem;
-  top: 3rem;
-  left: 6.5rem;
+.section-link .container-link .link-img .link-arrow{
+  height: 20rem;
+  width: 20rem;
+  top: -16rem;
+  right: -14rem;
 }
-.section-link .container-link .link-img  .icono-link:hover i{
-  top: 3rem;
-  left: 8rem;
-}
+
 }
 @media(max-width: 660px){
   .promotions{
-    padding: .5rem;
+  padding: .5rem;
   gap: .5rem;
 }
   .promotions .text{

@@ -211,34 +211,36 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 1rem;
-    background-image: url('../img/cervezas/background-luces.jpg');
+    padding: 4rem .5rem;
+    background-image: url('../img/cervezas/background-luceseditado.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; 
 }
 .ixbalanque .container{
-  width: 90%;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 2rem;
 }
 .ixbalanque .container .cont-img{
-  width: 400px;
-  height: 100%;
-  object-fit: contain;
+  flex: 1 1 7rem;
 }
 .ixbalanque .container .cont-img img{
   width: 100%;
-  height: 100%;
+  height: 350px;
   object-fit: contain;
 }
 /*ixbalanque-respondive*/
 .ixbalanque-responsive{
   width: 100%;
+    background-image: url('../img/cervezas/background-luceseditado.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,9 +257,8 @@ body{
   gap: 2rem;
 }
 .ixbalanque-responsive .container .cont-img{
-  width: 400px;
-  height: 100%;
-  object-fit: contain;
+  flex: 1 1 7rem;
+  height: 250px;
 }
 .ixbalanque-responsive .container .cont-img img{
   width: 100%;
@@ -271,12 +272,26 @@ body{
 
 /*------  100-goles  -------*/
 .goles{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #153687;
-    background: radial-gradient(circle, rgba(21, 54, 135, 1) 0%, rgba(5, 15, 50, 1) 100%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/img/cervezas/pared-de-cervezas-del-restaurante-las-tres-amigas.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 5rem .5rem;
+  position: relative;
+  z-index: 1;
+  }
+.goles::after{
+  content: '';
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  background: #585858;
+  left: 0;
+  z-index: 1;
 }
 .goles .container-goles{
     width: 100%;
@@ -284,18 +299,11 @@ body{
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
-    position: relative;
-}
-.goles .container-goles  .logo-goles{
-    position: absolute;
-    width: 100px;
-    right: 46%;
-    z-index: 10;
-    top: 0;
+    z-index: 3;
 }
 
+
 .goles .container-goles .goles-info{
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,6 +318,7 @@ body{
     font-family: "Inria Sans", sans-serif;
     font-size: 5rem;
     font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .goles .container-goles .goles-info a{
     color: #000000;
@@ -339,18 +348,6 @@ body{
 
 
 /*---------  menu    -------*/
-.antigua{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 1rem;
-    background-image: url('../img/cervezas/antigua-cerveza.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 
 /*-----     -----*/
@@ -361,49 +358,36 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 2rem;
+    padding: clamp(1rem, 4vw, 4rem);
     background-image: url('../img/cervezas/backgroun-mesa.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
-.cadejo .logo-cadejo{
-    position: absolute;
-    z-index: 1;
-    width: 300px;
-    height: 300px;
-    opacity: 0.3;
-    right: 40%;
-    top: 20%;
-    object-fit: contain;
-}
+
 
 /*----*/
 .cadejo .cadejo-cont{
-    width: 100%;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content:end;
+    align-items: end;
+    text-align: end;
     z-index: 2;
     gap: 1rem;
 }
-.cadejo .cadejo-cont .contenedor-text{
-    width: 100%;
+.cadejo .cadejo-cont .figure-cadejo{
+  flex: 1 1 7rem;
 }
-.cadejo .cadejo-cont .contenedor-text h2{
-    color: white;
-    font-size: 4.7rem;
-    font-family: "Karla", sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-.cadejo .cadejo-cont .contenedor-text{
-  width: 300px;
-}
+
+
+
 .cadejo .cadejo-cont .figure-cadejo img{
-  width: 270px;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
 }
 
 
@@ -412,6 +396,10 @@ body{
 .cadejo-responsive{
     width: 100%;
     min-height: 50vh;
+    background-image: url('../img/cervezas/backgroun-mesa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -419,103 +407,34 @@ body{
     padding: 2rem;
     display: none;
 }
-.cadejo-responsive .logo-cadejo{
-    position: absolute;
-    z-index: 1;
-    width: 300px;
-    height: 300px;
-    opacity: 0.4;
-    right: 40%;
-    top: 20%;
-    object-fit: contain;
-}
 
 /*----*/
 .cadejo-responsive .cadejo-cont{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
+    text-align: center;
     z-index: 2;
     gap: 1rem;
 }
 .cadejo-responsive .cadejo-cont .contenedor-text{
-    width: 100%;
+  flex: 1 1 7rem;
+  text-align: center;
+   
 }
-.cadejo-responsive .cadejo-cont .contenedor-text h2{
-    color: black;
-    font-size: 4.7rem;
-    font-family: "Karla", sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-.cadejo-responsive .cadejo-cont .contenedor-text{
-  width: 300px;
-}
-.cadejo-responsive .cadejo-cont .figure-cadejo img{
-  width: 270px;
+.cadejo-responsive .cadejo-cont .contenedor-text img{
+   width: 100%;
+   height: 300px;
+   object-fit: contain;
 }
 
 /*----*/
 
 
 /*------    roque   ------*/
-.roque{
-    width: 100%;
-    min-height: 90vh;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    position: relative;
-    background: #570c0d;
-}
-.roque::before{
-    content: "";
-    position: absolute;
-    background-image: url('../img/cervezas/pared-de-cervezas-del-restaurante-las-tres-amigas.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 70%;
-    height: 80%;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    
-}
-.roque .contenedor-roque{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-}
-.roque .contenedor-roque{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    gap: 1rem;
-}
-.roque .contenedor-roque .contenedor-logo{
-  width: 200px;
-  height: 170px;
-} 
-.roque .contenedor-roque .contenedor-botellas{
-  width: 500px;
-  height: 400px;
-}   
-.roque .contenedor-roque img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+
 
 
 /*----    cerveceria-14   -----*/
@@ -914,6 +833,15 @@ body{
 }
 
 /*----    banner-ixbalanque responsive  ---*/
+@media(max-width: 990px){
+.ixbalanque .container{
+  width: 100%;
+}
+.cadejo .cadejo-cont{
+    width: 100%;
+
+}
+}
 @media(max-width: 700px){
   .ixbalanque{
     display: none;
@@ -936,20 +864,16 @@ body{
   }
 
 }
-@media (max-width: 649px){
-.cadejo .cadejo-cont .contenedor-text h2{
-    font-size: 3rem;
-}
-.cadejo-responsive .cadejo-cont .contenedor-text h2{
-    font-size: 3rem;
-}
-}
+
 
 
 /*-------   promotions  ------*/
 @media (max-width: 929px){
+  .goles{
+  padding: 2rem .5rem;
+  }
   .goles .container-goles .goles-info{
-  margin-left: 2rem;
+  margin-left: 0rem;
 }
   .goles .container-goles .goles-info h2{
     font-size: 3rem;
@@ -990,12 +914,13 @@ body{
 }
 }
 
-/*-----   cerveza el cadejo -----*/
-@media(max-width: 649px){
-  .cadejo .cadejo-cont .figure-cadejo img{
-  width: 200px;
+/*-----   cerveza  -----*/
+@media(max-width: 477px){
+  .cervezas{
+    padding-top: 1.5rem;
 }
 }
+
 
 
 /*------ our    ------*/
