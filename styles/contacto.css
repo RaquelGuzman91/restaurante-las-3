@@ -21,6 +21,7 @@ body{
 /*-----    CONTACTO  --------*/
 
 .contact{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,6 +31,11 @@ body{
   margin-top: 2rem;
   margin-bottom: 3rem;
  
+}
+.contact #render-map{
+  width: 80%;
+  text-align: center;
+  
 }
 .contact h3{
   text-align: center;
@@ -50,6 +56,7 @@ body{
 .contact .icon-i{
   padding: 1rem 0px;
   display: flex;
+  justify-content: center;
   gap: 2rem;
 }
 .contact .icon-i a{
@@ -68,9 +75,10 @@ body{
   border: 2px solid #585858;
 }
 .contact .map{
-  width: 80%;
-  height: 75vh;
+  width: 100%;
+  height: 80vh;
   padding-bottom: 4rem;
+  
 }
 
 /*------  top    ----*/
@@ -103,6 +111,8 @@ body{
 @media(max-width: 690px){
   .contact .map{
   width: 100%;
-  height: 60vh;
+}
+.contact #render-map{
+  width: 100%;
 }
 }
