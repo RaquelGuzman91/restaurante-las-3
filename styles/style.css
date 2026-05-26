@@ -57,7 +57,7 @@ body{
   justify-content: left;
   gap: 1rem;
 }
-.banner .banner-text h3{
+.banner .banner-text h1{
   color: white;
   font-family: "Inika", serif;
   font-size: clamp(30px, 5vw, 50px);    /*3.5rem*/
@@ -234,6 +234,7 @@ body{
   transition: all 500ms ease;
   font-weight: 100;
   letter-spacing: .2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .menu .download:hover{
   background: white;
@@ -249,7 +250,7 @@ body{
 
 /*----- promotions    -----*/
 .promotions{
-  background-image: url('../img/promociones.jpg');
+  background-image: url('../img/banner-promocioneseditado.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

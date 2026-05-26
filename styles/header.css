@@ -93,14 +93,15 @@ body{
 .header .menu-bars .icon li a{
   color: #F2F2F2;
   font-size: 1.3rem;
-  background: #731012;
+  background: #F7A936;
   padding: .6rem .5rem;
   border-radius: 7px;
   transition: all 500ms ease;
+  text-shadow: 2px 2px 4px rgba(63, 63, 63, 0.5);
 }
 .header .menu-bars .icon li a:hover{
   color: white;
-  background: #F7A936;
+  background: #ffbe5b;
 }
 
 /*-------- menu-responsive    ------*/
@@ -169,11 +170,12 @@ body{
   .header .menu-bars .links li {
   text-align: center;
   width: 90%;
-  border-bottom: 2px solid #ececec;
   padding-bottom: 1rem;
 }
-.header .menu-bars .links li a{
-  font-size: 2rem;
+.header .menu-bars .links li .link-bar,
+.header .menu-bars .links .li-phone span i,
+.header .menu-bars .links .li-phone .icon-phone{
+  font-size: 1.3rem;
 }
  .header .menu-bars .links .li-phone {
   border: none;
@@ -182,9 +184,7 @@ body{
   .header .menu-bars .links.is-active{
     transform: translateX(0);
   }
-.header .menu-bars .links .li-phone span i{
-  font-size: 1rem;
-}
+
 
 
 }

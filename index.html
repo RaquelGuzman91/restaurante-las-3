@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/contacto.css">
     <!---->
+    <script src="./JS/index.js" type="module" defer></script>
     <script src="./JS/Data.js"></script>
     <script src="./JS/header.js" type="module" ></script>
     <script src="./JS/footer.js" type="module"></script>
     <script src="./JS/contactoMap.js" type="module"></script>
+    <script src="./JS/headerID.js" type="module"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--  hamburgers libreria css  -->
@@ -30,14 +32,41 @@
 <body>
 
     <!----  HEADER   --->
-    <div class="container-header" id="container-header" id="inicio">
-        <div class="header-render" id="header-render"></div>
-    </div>
+    <header class="header">
+        <nav class="menu-bars">
+      <a class="img-logo" href="index.html">
+        <img src="./img/LogoRedOnBlack-optimizado.png" alt="" width="70px">
+      </a>
+      <ul class="nav links">
+        <li><a class="link-bar" id="header-inicio">INICIO</a></li>
+        <li><a class="link-bar" id="header-nosotros">NOSOTROS</a></li>
+        <li><a class="link-bar" id="header-menu">MENÚ</a></li>
+        <li><a class="link-bar" id="header-contacto">UBICACIÓN</a></li>
+        <li class="li-phone">
+          <span><i class="fa-solid fa-phone"></i>
+          <a class="icon-phone" id="red-telefono">(502+) 4663 - 2525</a></span>
+        </li>
+      </ul>
+      <ul class="icon">
+        <li><a  id="red-instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a  id="red-facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a id="red-googlemap" target="_blank"><i class="fa-solid fa-location-dot"></i></a></li>
+        <li><a id="red-waze" target="_blank"><i class="fa-brands fa-waze"></i></a></li>
+      </ul>
+    </nav>
+    <!-- --- hamburger-responsive --- -->
+    <button class="hamburger--collapse hamburger" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    </header>
+    
 
     <!--    banner      -->
     <section  class="banner">
         <article class="banner-text">
-            <h3>RESTURANTE <br> LAS TRES AMIGAS</h3>
+            <h1>RESTURANTE <br> LAS TRES AMIGAS</h1>
             <p>Somos un restaurante Gourmet en Antigua Guatemala</p>
         </article>
     </section>
@@ -291,7 +320,7 @@
                 La madre guatemalteca de Marilyn y su padre japonés eran dueños de una carnicería en Antigua Market y ella comenzó a aprender sobre la cocina japonesa cuando era niña.
                 Platos como el katsudon Más tarde estudió chef, viajó internacionalmente y aprendió otros métodos de cocina. Tiene una paleta talentosa para comprender los alimentos.
                 Humilde y a veces tímida, pero siempre con una sonrisa en el rostro.
-                Tenamos un personal increíblemente dedicado que ama la industria de los restaurantes y eso se nota en nuestro servicio y nuestro menú.
+                Contamos con    un personal increíblemente dedicado que ama la industria de los restaurantes y eso se nota en nuestro servicio y nuestro menú.
             </p>
         </article>
         <article class="our-img">
@@ -326,10 +355,11 @@
     </div>
 
     <!-- --- script     -->
-    <script src="modules.js" type="module"></script>
-    <script src="scroll.js"></script>
-    <script src="button-top.js"></script>
+    <script src="./JS/modules.js" type="module"></script>
+    <script src="./JS/scroll.js"></script>
+    <script src="./JS/button-top.js"></script>
     <script src="./JS/footer-nav.js"></script>
+   
     
 
 </body>

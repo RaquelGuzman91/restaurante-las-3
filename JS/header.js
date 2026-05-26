@@ -17,7 +17,7 @@ function renderHeader() {
         <li><a class="link-bar" href="${Datas.links.contacto}">UBICACIÓN</a></li>
         <li class="li-phone">
           <span><i class="fa-solid fa-phone"></i>
-          <a class="icon-phone" href="">${Datas.info.telefono}</a></span>
+          <a class="icon-phone" href="${Datas.redes.telefono}">(502+) 4663 - 2525</a></span>
         </li>
       </ul>
       <ul class="icon">

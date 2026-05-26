@@ -6,7 +6,7 @@ export const Datas = {
         waze: "https://ul.waze.com/ul?place=ChIJ54CuboYPiYURfU1Qzjw8-v4&ll=14.56203210%2C-90.73510210&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location",
         map: "https://maps.app.goo.gl/MMUxHsBu43NsLcEP9",
         googlemap: "https://maps.app.goo.gl/MMUxHsBu43NsLcEP9",
-        telefono: "",
+        telefono: "tel:+50246632525",
     },
     links: {
         inicio: "index.html#inicio",
