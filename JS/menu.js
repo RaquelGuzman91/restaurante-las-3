@@ -9,11 +9,11 @@ export const menu = [
     },
     {
         id: 1.2,
-        nombre: "Tacos del mar y fuego", 
+        nombre: "Fuego del mar", 
         categoria: "entrada",
         descripcion: "camarones en tempura con una salsa dulce y sutilmente picante, aguacate, tomate, cilantro y crema. plato estrella",
-        img: "./img/menu/entradas/1.2.jpg",
-        precio: "120",
+        img: "./img/menu/entradas/Fuego-del-mar-FB.jpg",
+        precio: 120,
     },
     {
         id: 1.3,
@@ -28,7 +28,7 @@ export const menu = [
         nombre: "Jalapeño poppers",
         categoria: "entrada",
         descripcion: "jalapeño en tempura relleno con dip de queso crema con especias y tocino enrollado",
-        img: "./img/menu/entradas/1.4.jpg",
+        img: "./img/menu/entradas/Jalapeño-poppers-FB2.jpg",
         precio: 65,
     },
     {
@@ -52,7 +52,7 @@ export const menu = [
         nombre: "Ensalada caprese",
         categoria: "entrada",
         descripcion: "Tomate, mozzarella fresca, pesto, reduccion de vinagre balsamico y aceite de oliva.",
-        img: "./img/menu/entradas/1.7.jpg",
+        img: "./img/menu/entradas/Ensalada -caprese-FB.jpg",
         precio: 60,
     },
     {
@@ -109,7 +109,7 @@ export const menu = [
         nombre: "Tacos al pastor",
         categoria: "tacos", 
         descripcion: "cerdo desmenuzado con salsa de adobo, cebolla caramelizada y cubos de piña.",
-        img: "./img/menu/tacos/2.2.jpg",
+        img: "./img/menu/tacos/Tacos -al-pastor-FB.jpg",
         precio: 80,
     },
     {
@@ -125,7 +125,7 @@ export const menu = [
         nombre: "Tacos de pescado",
         categoria: "tacos", 
         descripcion: "Tilapia en tempura, aguacate, repollo y chipotle.",
-        img: "./img/menu/tacos/2.4.jpg",
+        img: "./img/menu/tacos/Tacos-de-pescado-FB.jpg",
         precio: 85,
     },
     {
@@ -141,7 +141,7 @@ export const menu = [
         nombre: "Tacos de pollo",
         categoria: "tacos", 
         descripcion: "Pollo desmenuzado, cebolla salteada, cilantro, aguacate, pico de gallo y chipotle.",
-        img: "./img/menu/tacos/2.6.jpg",
+        img: "./img/menu/tacos/tacos-de-pollo-FB2.jpg",
         precio: 75,
     },
     {
@@ -230,7 +230,7 @@ export const menu = [
         nombre: "BBQ wings",
         categoria: "barbacoa", 
         descripcion: "Alitas asadas. Salsa de tu eleccion. Con crudités. 12 Q130 o 6 Q70",
-        img: "./img/menu/barbacoa/3.7.jpg",
+        img: "./img/menu/barbacoa/BBQ-wings-FB.jpg",
         precio: 75,
     },
     /*---VEGETARIANOS---*/
@@ -460,7 +460,7 @@ export const menu = [
         nombre: "Panna cotta",
         categoria: "postres", 
         descripcion: "Con chocolate blanco, servicio sobre un coulis de fresa, cumble y frutos rojos.",
-        img: "./img/menu/postres/8.1.jpg",
+        img: "./img/menu/postres/Panna-cotta-FB.jpg",
         precio: 60,
     },
     {
@@ -468,7 +468,7 @@ export const menu = [
         nombre: "Brownie con helado",
         categoria: "postres", 
         descripcion: "Brownie de chocolate y helado de vainilla.",
-        img: "./img/menu/postres/8.2.jpg",
+        img: "./img/menu/postres/Brownie-con-helado-FB.jpg",
         precio: 50,
     },
     {
@@ -476,7 +476,7 @@ export const menu = [
         nombre: "Key lime cheesecake",
         categoria: "postres", 
         descripcion: "Capas de pie de limon clasico, cheesecake de limon, galleta y crema batida, servido en un vaso.",
-        img: "./img/menu/postres/8.3.jpg",
+        img: "./img/menu/postres/Key -lime-cheesecake-FB.jpg",
         precio: 50,
     },
     {
@@ -484,7 +484,7 @@ export const menu = [
         nombre: "Reese’s cheesecake",
         categoria: "postres", 
         descripcion: "Cheesecake de mantequilla de mani, ganache de chocolate, galleta y crema batida, servido en un vaso.",
-        img: "./img/menu/postres/8.4.jpg",
+        img: "./img/menu/postres/Key -lime-cheesecake-FB.jpg",
         precio: 50,
     },
     {
